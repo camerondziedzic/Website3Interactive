@@ -1,0 +1,90 @@
+h1 {
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-image: url("/Project3/imgs/pexels-photo-2208969.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr ;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a a "
+        "b c "
+        "e e ";
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.e {
+    grid-area: e;
+}
+
+#images {
+    max-width: 100%;
+}
+
+#westernstarimage {
+    max-width: 90%;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+#peterbiltimage {
+    max-width: 55%;
+    margin-top: 15%;
+    margin-left:-5%;
+}
+#keysimage {
+    max-width: 10%;
+    margin-left: 50%;
+    margin-top: -10%
+}
+#peterbiltimage:hover,
+#westernstarimage:hover,
+#keys:hover, #BackgroundButton, #SwapButton{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 49px;
+}
+
+#BackgroundButton {
+    margin-left: 50%;
+}
+
+#SwapButton {
+margin-left: 40%;
+}
+
+
+.SwapBack {
+    margin-top: auto;
+    margin-left: 45%;
+}
+
+.SwapCar {
+    margin-top: auto;
+    margin-left: 38%;
+}
